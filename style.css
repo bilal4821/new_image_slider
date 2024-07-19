@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-image: url(image.jpg);
+  }
+  .container {
+    display: flex;
+    /* max-width: 640px; */
+    /* width: 100%;
+    height: 400px; */
+    /* background: #eb1818;  */
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    /* border-radius: 92px; */
+    /* box-shadow: 5px 10px 19px 10px; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+   } 
+
+  
+  .container i {
+    /* margin-left: 70px;
+    margin-right: 70px;  */
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+    height: 32px;
+    width: 32px;
+    background-color: #4f77b3;
+    border-radius: 99%;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  /* i.button:active { */
+    /* transform: scale(0.99) translateY(-180%); */
+  /* } */
+
+  i#prev {
+    left: 25px;
+  }
+  i#next {
+    right: 25px;
+  }
+  .img-container {
+    position: relative;
+    border-radius: 33px;
+    border: 3px solid;
+    height: 320px;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .img-container .slider {                                /*  */
+    border-radius: 98px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+  }
+  .slider img {
+    height: 100%;
+    width: 100%;
+    border-radius: 28px;
+    border: 4px solid #fff;
+    object-fit: cover;
+    
+  }
+
+
+.img-container i{
+    position: absolute;
+    left: 92%;
+    top: 45%;
+}
+
+
+.container #prev{
+    position: relative;
+    left: 8%;
+    top: 8%;
+}
+
+
+
+
+#prev:hover{
+    color: black;
+    opacity: 63%;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px; 
+}
+
+#next:hover{
+    color: black;
+    opacity: 63%;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px; 
+    
+}
+
+
+
+
+
